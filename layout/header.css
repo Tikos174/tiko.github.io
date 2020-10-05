@@ -1,0 +1,107 @@
+.header{
+  background: white;
+  box-shadow: 0 1px 3px 0 #000;
+  padding-bottom: 9px;
+  margin-bottom: 25px;
+} 
+
+.header-left, .header-right{
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  
+}
+
+.header-right {
+  text-align: right;
+  padding-top: 30px;
+}
+
+.user-photo{
+  border: 1px solid #bebebe;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.user_avatar{
+  display: block;
+
+}
+
+.user-name {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  max-width: 235px;
+}
+
+.contacts_triandel{
+  /*-- толщина  --- */
+  font-weight: 600;
+    /*-- высота  --- */
+  color: #33c1e3;
+      /*-- подчеркивание  --- */
+  text-decoration: none;
+  /*-- отспуп  --- */
+  padding-bottom: 5px; 
+    /*-- пунктир  --- */
+  border-bottom: 1px dashed;
+
+}
+
+.contacts-link{
+  padding: 5px;
+  display: inline-block;
+  font-weight: 10px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.contacts-text{
+  color: #727272; 
+  
+}
+
+
+.contacts_triandel:hover {
+  color: #e85f61;
+}
+.contacts-one:hover .contacts-dropdown {
+  display: block;
+}
+
+.contacts-dropdown {
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #bebebe;
+  border-radius: 10px;
+  position: absolute;
+  transform: translateX(-50%);
+        /*-- выше окна  --- */
+  z-index: 20;
+  margin-top: 5px;
+  display: none;
+  left: 72%;
+  transition: opacity .3s;
+  text-align: left;
+  
+}
+
+.contacts-icon{
+  color: #33c1e3;
+}
+
+.contacts-dropdown:before{
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  height: 0;
+  top: -30px;
+  position: absolute;
+
+}
+

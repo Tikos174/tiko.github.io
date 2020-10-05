@@ -1,0 +1,156 @@
+.career_left {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 6px;
+    padding-left: 14px;
+
+}
+
+.content-title{
+padding-left: 230px;
+font-weight: 600;
+font-size: 30px;
+color: black;
+padding-bottom: 20px;
+}
+
+.career_right{
+    width: 455px;
+/*--- прижать --- */
+    float: right;
+}
+
+.career_pic{
+/*--- вписать в контейнер --- */
+    overflow: hidden;
+/*--- радиус картинки --- */
+    border-radius: 9px;
+
+}
+
+.career_pic-elem{
+    display: cover;
+
+}
+
+.career_block{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 380px;
+   box-sizing: border-box;
+   padding: 20px;
+   display: inline-block;
+   text-align: left;
+   position: relative;
+   margin-bottom: 25px;
+}
+
+    /*--- after и before перевод как до и после --- */
+.career_block:after, .career_block::before{
+    content: "";
+    display: block;
+    width: 1px;
+    background: #dddddd;
+    position: absolute;
+    right: 100%;
+    margin-right: 20px;
+
+}
+
+
+    /*--- after и before выключение перевого и последнего варианта  --- */
+.career_item:first-child .career_block:before, .career_item:last-child .career_block:after{
+    display: none;
+}
+
+.career_block:before{
+    top: 0;
+    bottom: 40%;
+}
+
+.career_block:after{
+    top: 60%;
+    bottom: -25px;
+}
+
+
+    /*--- hover при наведении иконки --- */
+.career_item:hover .career_block{
+    background: #33c1e3;
+}
+
+.career_item:hover .career_block {
+    color: #fff;
+}
+    /*--- hover при наведении икноки и шрифт меняет цвет --- */
+.career_item:hover .career-occup, .career_item:hover .career-time{
+    color: #fff;
+}
+
+
+.career_item:hover .career_year {
+    font-weight: 600;
+    color: #33c1e3;
+}
+
+    /*--- after &&&&& что такое? --- */
+.career_item:hover .career_year:after {
+    border-color: #94e8f2;
+}
+
+
+.career_list{
+    text-align: right;
+}
+
+.career-title{
+    font-size: 21px;
+    color: #5a5a5a;
+    /*--- отспут от текста --- */
+    margin-bottom: 10px;
+}
+
+    /*--- оесли стили одинаковые можно использовать , --- */
+.career-occup, .career-time {
+    font-weight: 300;
+    color: #727272;
+    margin-bottom: 10px;
+}
+
+.career-time {
+margin-bottom: 0;
+}
+
+.career_year{
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-right: 35px;
+    font-size: 14px;
+    color: #727272;
+        /*--- высота блока --- */
+    line-height: 28px;
+    margin-top: -14px;
+}
+
+.career_year::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #33c1e3;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    margin-top: -10px;
+    border: 5px solid #f6f6f6;
+}
+
+.nav_item_active .nav_link {
+    border-color: #33c1e3;
+    font-weight: 600;
+    color: #33c1e3 ;
+}
